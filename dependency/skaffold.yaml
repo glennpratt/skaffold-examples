@@ -1,0 +1,9 @@
+apiVersion: skaffold/v2beta19
+kind: Config
+build:
+  artifacts:
+  - image: foobar
+    custom:
+      buildCommand: docker build . -t $IMAGE && skopeo copy --dest-tls-verify=false "docker-daemon:${IMAGE}" "docker://${IMAGE}"
+      dependencies:
+        command: ./test.sh
