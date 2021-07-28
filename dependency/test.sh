@@ -1,2 +1,2 @@
 #!/bin/sh
-echo '["k8s/foo.yaml"]'
+echo '["k8s/dependency.yaml"]'
