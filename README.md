@@ -1,9 +1,11 @@
+https://github.com/GoogleContainerTools/skaffold/issues/6321
+
 ```
 cd parent
 skaffold run
 ```
 
-h2. Expected
+# Expected
 ```
 ❯ skaffold run                                            
 Generating tags...
@@ -21,7 +23,7 @@ Deployments stabilized in 46.856264ms
 You can also run [skaffold run --tail] to get the logs
 ```
 
-h2. Actual
+# Actual
 
 ```
 ❯ skaffold run
